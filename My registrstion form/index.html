@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title"> My registrstion form</h1>
+    <p id ="description">Thank you for taking the time to help us improve the platform
+</p>
+<form id="survey-form">
+  <feeldset>
+  <label for="name" id="name-label">Enter Your Name:<input id="name" type="text" placeholder="Name"  required>
+  <label for="email" id="email-label">Enter Your Email<input id="email" type="email" placeholder="Email" required>
+  <label for="number" id="number-label">Enter Your Phone Number<input id="number" type="number" placeholder="Phone Number" min="7" max="7" required>
+  <div class="form-group">
+    <p>What kind of music do you like?</p>
+    <select id="dropdown" name="kinde-of-music" class="form-control" required="">
+            <option >Select</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="hip-hop">Hip-hop</option>
+            <option value="classic">Classic</option>
+            <option value="other">Other</option>
+          </select>
+    </div>
+    <div class="form-group">
+      <p> Do you play a musical instrument?</p>
+      <label><input type="radio" class="input-radio" value="yes" name="user-play">Yes</label>
+      <label><input type="radio" class="input-radio" value="no" name="user-play">No</label>
+      </div>
+      <div class="form-group">
+        <p>Have you ever play in a band? </p>
+        <label><input type="checkbox" name="play-check" class="input-checkbox" value="before">Before</label>
+        <label><input type="checkbox" name="play-check" class="input-checkbox" value="playing">I'm playing now</label>
+        <label><input type="checkbox" name="play-check" class="input-checkbox" value="never">Never</label>
+        </div>
+     <div class="form-group">
+      <p> Write your review about the concert</p>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+     <div class="form-group">
+       <button type="submit" id="submit" class="submit-button">Submit</button>
+</div>
+  </feeldset>
+</form>
+    </body>
+    </html>
